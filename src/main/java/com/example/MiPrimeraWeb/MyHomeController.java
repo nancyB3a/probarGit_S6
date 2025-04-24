@@ -24,4 +24,8 @@ public class MyHomeController {
         return "El valor ingresado es " + num1;
     }
     
+    @GetMapping("/api/v2")
+    public String otroV2() {
+        return "Esta es Otra Web V2";
+    }
 }
