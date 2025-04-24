@@ -13,12 +13,7 @@ public class MyHomeController {
     public String index() {
         return "Esta es Mi Primera Web";
     }
-
-    @GetMapping("/api")
-    public String otro() {
-        return "Esta es Otra Web";
-    }
-
+ 
     @GetMapping("/api/valor")
     public String valor(@RequestParam int num1) {
         return "El valor ingresado es " + num1;
